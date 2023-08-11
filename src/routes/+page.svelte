@@ -11,10 +11,10 @@
   export const snapshot: Snapshot = {
     capture: () => ({value, unit, vat, cashbackRate}),
     restore: (v) => {
-      value = v?.value ?? 0;
+      value = v?.value ?? undefined;
       unit = v?.unit ?? '€';
       vat = v?.vat ?? 19;
-      cashbackRate = v?.cashbackRate ?? 0;
+      cashbackRate = v?.cashbackRate ?? undefined;
     },
   };
 

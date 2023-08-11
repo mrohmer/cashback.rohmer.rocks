@@ -47,12 +47,12 @@
     <div class="h-px w-full bg-white"></div>
 
     <div class="px-2" class:opacity-50={!result}>
-        <Input name="resul-cashback" value={(result?.cashback ?? 0).toFixed(2)} {unit} disabled class="px-2">
+        <Input name="resul-cashback" value={(result?.cashback ?? 0).toFixed(2)} {unit} disabled>
             Cashback
         </Input>
     </div>
     <div class="px-2" class:opacity-50={!result}>
-        <Input name="result-total" value={(result?.result ?? 0).toFixed(2)} {unit} disabled class="px-2">
+        <Input name="result-total" value={(result?.result ?? 0).toFixed(2)} {unit} disabled>
             Gesammtpreis
         </Input>
     </div>
